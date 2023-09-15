@@ -82,10 +82,6 @@ ChatBot &ChatBot::operator=(ChatBot &&source)       // Move assignment operator
     std::cout << "Using Chatbot move operator" << std::endl;
     if (this == &source)
         return *this;
-    // delete _image;
-    // delete _currentNode;
-    // delete _rootNode;
-    // delete _chatLogic;
 
     _image = source._image;
     _currentNode = source._currentNode;
